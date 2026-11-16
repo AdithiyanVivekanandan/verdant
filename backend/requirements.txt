@@ -1,0 +1,17 @@
+fastapi==0.115.0
+uvicorn[standard]==0.32.1
+pydantic>=2.14,<3.0
+pydantic-settings>=2.4,<3.0
+sqlalchemy>=2.0,<3.0
+alembic>=1.13,<2.0
+psycopg2-binary==2.9.13
+python-jose[cryptography]==3.3.0
+python-multipart==0.0.9
+python-dotenv==1.0.1
+httpx==0.28.0
+python-dateutil==2.9.0.post0
+bcrypt==4.2.0
+
+# Machine learning (irrigation prediction pipeline)
+numpy>=1.26,<3.0
+scikit-learn>=1.5,<2.0

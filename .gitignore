@@ -1,0 +1,124 @@
+# Secrets and local environment files. Keep safe templates in Git.
+.env
+.env.*
+!.env.example
+!**/.env.example
+
+# Python environments, bytecode, and tooling caches.
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+env/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+.coverage.*
+htmlcov/
+
+# Test sources and test-only configuration (excluded by request).
+**/tests/
+test_*.py
+*_test.py
+*.test.ts
+*.test.tsx
+*.spec.ts
+*.spec.tsx
+pytest.ini
+
+# Python build and package output.
+build/
+dist/
+*.egg-info/
+
+# Node, Next.js, and frontend build output.
+node_modules/
+.next/
+out/
+.turbo/
+coverage/
+*.tsbuildinfo
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
+
+# Local model artifacts and PostgreSQL files.
+backend/app/ml/artifacts/
+*.sqlite
+*.sqlite3
+*.db
+pg.log
+
+# Editor, OS, and temporary files.
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+*.log
+*.tmp
+*.temp
+
+# Local agent/session configuration and conversation snapshots.
+.opencode/
+opencode.json
+session-*.md
+# AI agents and local agent configuration
+.agents/
+.agent/
+.opencode/
+**/.agents/
+**/.agent/
+**/.opencode/
+opencode.json
+session-*.md
+
+# Demo seed scripts
+backend/seed.py
+
+# Local environment and secrets
+.env
+.env.*
+!.env.example
+!**/.env.example
+
+# Python environments and caches
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Frontend dependencies and builds
+node_modules/
+.next/
+out/
+.turbo/
+coverage/
+
+# Generated ML artifacts
+backend/app/ml/artifacts/
+
+# Local databases
+*.sqlite
+*.sqlite3
+*.db
+
+# Private keys
+*.pem
+*.key
+*.p12
+
+# Editor and temporary files
+.idea/
+.vscode/
+.DS_Store
+*.log
+*.tmp
+frontend/skills-lock.json

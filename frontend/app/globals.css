@@ -1,0 +1,138 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+@layer base {
+  :root {
+    /* Verdant light theme — Botanical / Earth */
+    --background: 246 245 239;      /* Canvas #F6F5EF */
+    --foreground: 51 61 54;         /* Primary text #333D36 */
+
+    --surface: 255 255 255;         /* Surface #FFFFFF */
+    --surface-foreground: 51 61 54;
+
+    --card: 255 255 255;
+    --card-foreground: 51 61 54;
+
+    --popover: 255 255 255;
+    --popover-foreground: 51 61 54;
+
+    --primary: 24 61 50;            /* Primary forest #183D32 */
+    --primary-foreground: 255 255 255;
+
+    --secondary: 40 92 69;          /* Canopy #285C45 */
+    --secondary-foreground: 255 255 255;
+
+    --muted: 233 234 225;           /* Border #E9EAE1 used as muted bg */
+    --muted-foreground: 119 128 120; /* Secondary text #778078 */
+
+    --accent: 184 201 168;          /* Leaf #B8C9A8 */
+    --accent-foreground: 51 61 54;
+
+    --destructive: 182 75 64;       /* Critical #B64B40 */
+    --destructive-foreground: 255 255 255;
+
+    --caution: 193 138 54;          /* Caution #C18A36 */
+    --caution-foreground: 255 255 255;
+
+    --healthy: 61 128 91;           /* Healthy #3D805B */
+    --healthy-foreground: 255 255 255;
+
+    --info: 73 125 160;             /* Information #497DA0 */
+    --info-foreground: 255 255 255;
+
+    --border: 233 234 225;          /* Border #E9EAE1 */
+    --input: 233 234 225;
+    --ring: 24 61 50;
+
+    --radius-sm: 6px;
+    --radius-md: 8px;
+    --radius-lg: 12px;
+    --radius-full: 9999px;
+
+    --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.04);
+    --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.06);
+    --shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.08);
+
+    color-scheme: light;
+  }
+
+  .dark {
+    /* Verdant dark theme — deliberately designed, not inverted */
+    --background: 21 29 25;         /* #151D19 */
+    --foreground: 232 238 232;      /* #E8EEE8 */
+
+    --surface: 30 41 35;            /* #1E2923 */
+    --surface-foreground: 232 238 232;
+
+    --card: 30 41 35;
+    --card-foreground: 232 238 232;
+
+    --popover: 30 41 35;
+    --popover-foreground: 232 238 232;
+
+    --primary: 142 174 145;         /* #8EAE91 */
+    --primary-foreground: 21 29 25;
+
+    --secondary: 40 92 69;
+    --secondary-foreground: 255 255 255;
+
+    --muted: 38 52 44;              /* #26342C */
+    --muted-foreground: 165 177 167; /* #A5B1A7 */
+
+    --accent: 184 201 168;          /* #B8C9A8 */
+    --accent-foreground: 21 29 25;
+
+    --destructive: 214 122 110;     /* #D67A6E */
+    --destructive-foreground: 255 255 255;
+
+    --caution: 224 165 90;          /* #E0A55A */
+    --caution-foreground: 255 255 255;
+
+    --healthy: 111 176 131;         /* #6FB083 */
+    --healthy-foreground: 255 255 255;
+
+    --info: 127 163 192;            /* #7FA3C0 */
+    --info-foreground: 255 255 255;
+
+    --border: 53 68 58;             /* #35443A */
+    --input: 53 68 58;
+    --ring: 142 174 145;
+
+    color-scheme: dark;
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-feature-settings: "rlig" 1, "calt" 1, "tnum" 1;
+    font-variant-numeric: tabular-nums;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  ::selection {
+    background: rgb(var(--primary) / 0.25);
+    color: rgb(var(--primary-foreground));
+  }
+}
+
+@layer base {
+  select,
+  input,
+  textarea {
+    font-family: inherit;
+    font-variant-numeric: tabular-nums;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
